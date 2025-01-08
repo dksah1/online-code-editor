@@ -4,8 +4,7 @@
 
 This project is a demonstration for the interview task. It showcases the following features:
 
-1. Display a list of products.
-2. Display details of a selected product.
+1. This Shows the implementation of the socket to make an actual code compiler running using web socket.
 
 ## Project Demo
 
