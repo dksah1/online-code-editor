@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body {
+  @apply bg-gray-900 text-white font-sans;
+}
+
+textarea {
+  @apply border-none outline-none;
+}
+
+select {
+  @apply text-white bg-gray-700 border-none outline-none;
+} */
