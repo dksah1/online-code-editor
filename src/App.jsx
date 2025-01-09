@@ -3,7 +3,6 @@ import useWebSocket from "react-use-websocket";
 import CodeEditor from "./components/CodeEditor";
 import OutputPanel from "./components/OutputPanel";
 import SideNav from "./components/SideNav";
-import InputBox from "./components/InputBox";
 
 const wsEndpoint = import.meta.env.VITE_WS_ENDPOINT;
 
@@ -71,9 +70,11 @@ const App = () => {
             <option value="java">Java</option>
             <option value="html">HTML</option>
             <option value="php">PHP</option>
-            <option value="cpp">C++</option>
+            <option value="c++">C++</option>
           </select>
-          <h1 className="text-lg font-bold mb-4">Skill Shikshya Editor</h1>
+          <h1 className="text-lg font-bold mb-4 uppercase">
+            Skill Shikshya Editor
+          </h1>
 
           <div className="flex gap-2">
             <button
@@ -107,13 +108,12 @@ const App = () => {
           </div>
         </header>
 
-        <div className="flex flex-grow">
+        <div className="flex flex-grow overflow-hidden ">
           <div className="flex flex-grow flex-col">
             <div className="flex flex-grow">
               <CodeEditor code={code} setCode={setCode} />
               <OutputPanel output={output} />
             </div>
-            <InputBox input={input} setInput={setInput} />
           </div>
         </div>
       </div>

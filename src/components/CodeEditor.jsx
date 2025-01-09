@@ -4,7 +4,7 @@ const CodeEditor = ({ code, setCode }) => {
   return (
     <div className="flex-grow bg-gray-800 p-4 border-r border-gray-700">
       <Editor
-        height="90vh"
+        height="80vh"
         defaultLanguage="javascript"
         defaultValue="// write code here"
         theme="vs-dark"

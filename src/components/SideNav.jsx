@@ -24,7 +24,7 @@ const SideNav = ({ language, setLanguage }) => {
           key={lang.name}
           className={`flex flex-col items-center justify-center w-full mb-4 cursor-pointer transition-all ${
             language === lang.name
-              ? "bg-blue-600 text-white h-20 rounded-lg scale-110"
+              ? "bg-[#111827] text-white h-20 rounded-lg scale-110"
               : "bg-gray-700 text-gray-300 h-16 rounded-md"
           }`}
           onClick={() => setLanguage(lang.name)}
